@@ -1,0 +1,166 @@
+/* :root {
+    --main-font: 'Source Sans Pro', sans-serif;
+
+    --secondary-font: 'Poiret One', cursive;
+
+    --body-font: 'Cabin', sans-serif;
+
+    --headings-font: 'Herr Von Muellerhoff', cursive;
+
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #e1b164;
+    --body-font-color: #515151;
+    --white-color: #fff;
+    --dark-bg: #121212;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-img {
+    width: 50%;
+    height: 60vh;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+
+.content-img img {
+    width: 65%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.content-img-cuadricula-4 {
+    width: 50%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+    grid-template-rows: repeat(2, 180px);
+    gap: 10px;
+    align-content: center;
+    padding-right: 50px;
+}
+
+.content-img-cuadricula-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-img-cuadricula-2 {
+    width: 50%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    object-fit: cover;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+.content-img-cuadricula-2 img {
+    width: 100%;
+    height: 80%;
+}
+
+.pantalla2-banner-con-imagen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.4)), url(../../img/tasteful-recipes.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.pantalla4-banner-con-imagen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.4)), url(../../img/tasty.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.contenedor {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.pantalla-reseña-usuario {
+    width: 100%;
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Source Sans Pro',
+        sans-serif;
+    overflow: auto;
+}
+
+.contenedor-reseñas {
+    width: 1200px;
+    height: 50vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 15vh 35vh;
+    align-items: center;
+
+}
+
+.contenedor-reseñas h3 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.contenedor-reseña-cliente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* cardsss */
+
+.item-card {
+    width: 300px;
+    height: 150px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.superior-reseña {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    align-items: center;
+}
+
+.superior-reseña img {
+    width: 100px;
+    height: 20px;
+}
+
+.superior-reseña p {
+    cursor: pointer;
+}
+
+.contenido-reseñas p {
+    max-width: 100%;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+.autor-reseñas {
+    text-transform: capitalize;
+    text-align: end;
+    font-size: 15px;
+}
